@@ -1,0 +1,18 @@
+.notepad {
+  background-color: $primary-dark;
+
+  textarea {
+    height: 500px;
+    background-color: transparent;
+    font-style: italic;
+    border:none;
+    border-top: 1px solid #262840;
+    color: rgba(255, 255, 255, 0.5);
+    resize: none;
+
+    &:focus, &:focus-visible {
+      border: none;
+      outline: none;
+    }
+  }
+}

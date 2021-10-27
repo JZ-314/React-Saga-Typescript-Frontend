@@ -1,0 +1,27 @@
+.meeting-calendar {
+    background-color: #fff;
+    border-radius: 12px;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.meeting-form {
+    padding: 10px;
+
+    .main-input-component:first-child {
+        margin-bottom: 12px;
+    }
+
+    // custom datetime picker
+    .datetime-picker-wrapper {
+        margin-top: 20px;
+
+        .datetime-picker-label {
+            margin-bottom: 10px;
+        }
+    }
+
+    .meeting-link {
+        margin-top: 20px;
+    }
+}

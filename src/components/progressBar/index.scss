@@ -1,0 +1,23 @@
+.progress_bar {
+  .bar {
+    width: 22px;
+    height: 5px;
+    background-color: #343653;
+  }
+
+  & .active-green {
+    background-color: #2FE768;
+  }
+
+  & .active-red {
+    background-color: #FF5252
+  }
+
+  & .text-green {
+    color: #2FE768;
+  }
+
+  & .text-red {
+    color: #FF5252
+  }
+}

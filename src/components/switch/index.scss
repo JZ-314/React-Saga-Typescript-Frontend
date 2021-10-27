@@ -1,0 +1,14 @@
+.switch-component {
+  .form-check-input {
+    margin-left: 1em !important;
+    
+    &:checked {
+      background-color: #549532 !important;
+      border-color: #549532 !important;
+    }
+  }
+  &.form-switch .form-check-input {
+    width: 2.5em;
+    height: 1.5em;
+  }
+}

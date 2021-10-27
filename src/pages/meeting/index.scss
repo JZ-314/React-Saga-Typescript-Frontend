@@ -1,0 +1,113 @@
+.meeting-page {
+  padding-top: 50px;
+}
+
+.dropdown-meeting {
+  background-color: $primary-dark;
+
+  &.is-closed {
+    padding-bottom: 0 !important;
+  }
+
+  > div:first-child {
+    border-bottom: 1px solid #262840;
+  }
+
+  &_toggle_button {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 30px;
+    height: 30px;
+    transform: rotate(0deg);
+    transition: transform ease-in 0.3s;
+
+    &.is-open {
+      transform: rotate(180deg);
+    }
+  }
+
+  &_content {
+    height: 0;
+    overflow: hidden;
+    transition: height ease-in 0.3s;
+
+    &.is-open {
+      height: unset;
+      overflow: visible;
+      transition: height ease-in 0.3s;
+    }
+  }
+}
+
+.main-video {
+  min-height: 700px;
+  background-color: #fff;
+
+  &__video_place {
+    object-fit: cover;
+  }
+
+  &_details {
+    background: rgba(0, 0, 0, 0.5);
+
+    &_button {
+      background-color: #fff;
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &_call_info {
+    background: $primary-dark;
+  }
+}
+
+.note-column {
+  &_preview {
+    height: 250px;
+  }
+}
+
+.meeting-fullscreen {
+  background: rgb(102, 102, 102);
+  height: 100vh;
+
+  &_column {
+    width: 400px;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.65);
+
+    &_details {
+      height: calc(100vh - 200px);
+      color: #fff;
+    }
+  }
+
+  &_open_column {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+  }
+
+  .dropdown-meeting {
+    background-color: transparent;
+    color: #fff;
+  }
+
+  &_video {
+    position: absolute;
+    right: 70px;
+    height: 263px;
+    width: 412px;
+    top: 70px;
+  }
+
+  &_notes {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 50px;
+    width: calc(100% - 400px);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+  }
+}

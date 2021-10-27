@@ -1,0 +1,9 @@
+.user_layout {
+  background-color: $background;
+  min-height: 100vh;
+  color: #fff;
+
+  &__container {
+    padding: 0 75px;
+  }
+}
